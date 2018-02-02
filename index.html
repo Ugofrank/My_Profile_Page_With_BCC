@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Profile Page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -16,13 +16,13 @@
 		<div class="container">
 			<ul>
 				<li class="current"><a href="#">Home</a></li>
-				<li><a href="#">Photos</a></li>
-				<li><a href="C:\Basic Coding Challenge\My_Profile_Page_with_BCC\new site\contact.html">Contact us</a></li>
+				<li><a href="#myPhotos">Photos</a></li>
+				<li><a href="#myForm">Contact us</a></li>
 			</ul>
 		</div>
 	</nav>
 		<div>
-			<img src="photo.png" alt="chilling me" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; height: auto; width: 200px; height: 250px; margin-top:20px; border-radius: 50%">
+			<img src="photo.png" alt="photot of me in my office" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; height: auto; width: 200px; height: 250px; margin-top:20px; border-radius: 50%">
 		</div>
 	<section id="main">
 		<div class="container">
@@ -43,7 +43,7 @@
 	</aside>
 
 	<section id="call">
-			<h1>Leave Your Number, We'll call you</h1>
+			<h3>Leave Your Number, We'll call you</h3>
 			<form>
 				<input type="Number" placeholder="00000000000">
 				<input type="text" placeholder="Preferred time of call">
@@ -51,16 +51,72 @@
 			</form>
 	</section>
 
+	<div class="clr"></div>
+
+		<div class="container-2">
+
+			<form> 
+				<div id="myForm" class="row">
+					<div class="lcol"><label>Last Name</label></div>
+					<div class="rcol"><input type="text" name="lastName"></div>
+				</div>
+
+				<div class="row">
+					<div class="lcol"><label>First Name</label></div>
+					<div class="rcol"><input type="text" name="firstName"></div>
+				</div>
+
+				<div class="row">
+					<div class="lcol"><label>Email</label></div>
+					<div class="rcol"><input type="text" name="email"></div>
+				</div>
+	
+				<div class="row">
+					<div class="lcol"><label>Gender</label></div>
+					<div class="rcol">
+						<select name="gender">
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="others">Others</option>
+						</select>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="lcol"><label>Age</label></div>
+					<div class="rcol"><input type="number" name="age"></div>
+				</div>
+
+				<div class="row">
+					<div class="lcol"><label>Birthday</label></div>
+					<div class="rcol"><input type="date" name="birthday"></div>
+				</div>
+		
+				<div class="row">
+					<div class="lcol"><label>Mobile No</label></div>
+					<div class="rcol"><input type="number" name="mobile"></div>
+				</div>
+
+				<div class="row">
+					<div class="lcol"><label>Message</label></div>
+					<div class="rcol"><textarea name="message" style="height: 200px;"></textarea></div>
+				</div>
+		
+				<div class="row"><input type="submit" name="Submit"></div>
+		</form>
+	</div>
+	
 	
 	<div class="social">
 		<a href="https://https://medium.com/ugoakukwu_97518">
 	 		 <img src="medium.png" alt="medium link"></a>
 	 		 	<br>
 	  	<a href="https://www.twitter.com/ugoakukwu">
-	  		<img src="twitter.png"></a>
+	  		<img src="twitter.png" alt="twitter link"></a>
 	</div>
 
 	<section id="box">
+		<h2 id="myPhotos">Products</h2>
 		<div class="container">
 		<div class="gallery">
 			<a target="blank" href="http://www.tbm.com.ng/product/fluke-117-multimeter/">
@@ -69,7 +125,7 @@
 			<h3>Fluke 117 Multimeter</h3>
 			<p>The Fluke 117 Multimeter is an Auto True RMS Handheld Digital  Multimeter  with a 3.75 Digit LCD and a  Bar Graph Display. It ...</p>
 		</div>
-		<div class="gallery">
+		<div id="photo" class="gallery">
 			<a target="blank" href="http://www.tbm.com.ng/product/15l-ariston-water-heater/">
 				<img src="C:\Basic Coding Challenge\My_Profile_Page_with_BCC\image\ariston.jpg" alt="ariston water heater" style="width: 250px;height: 200px;border-radius: 6px">
 			</a>
